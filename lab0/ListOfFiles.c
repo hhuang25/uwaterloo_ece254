@@ -24,23 +24,24 @@ int main(int argc, char *argv[])
 	struct stat *info;
 	struct dirent *ent; 
 
+	//open current directory
 	dir = opendir(".");
 
-	//printf("    Name    Type        Mode User ID Group ID    Size         Last Access   Last Modification  Last Status Change      File Permission\n");
-
+	//find every file in the directory
 	while((ent = readdir(dir)) != NULL)
 	{
+		//skip the parent directory and current directory
 		if (strcmp(ent->d_name, ".") && strcmp(ent->d_name, ".."))
 		{
-			
+			//allocate memory for stat
 			info = malloc(sizeof(struct stat));
-
+			//error checking and setting value for info
 			if (stat(ent->d_name, info) < 0)
 			{
 				perror("error getting file");
 				continue;
 			}
-
+			//converting file type
 			if      (S_ISREG(info->st_mode))  ptr = "regular";
 			else if (S_ISDIR(info->st_mode))  ptr = "directory";
 			else if (S_ISCHR(info->st_mode))  ptr = "character special";
@@ -49,9 +50,7 @@ int main(int argc, char *argv[])
 			else if (S_ISLNK(info->st_mode))  ptr = "symbolic link";
 			else if (S_ISSOCK(info->st_mode)) ptr = "socket";
 			else                              ptr = "**unknown mode**";
-
-			//printf ("%8s%8u%12s%8d%9d%8d", ent->d_name, ent->d_type, ptr, info->st_uid, info->st_gid, info->st_size);
-			//printf ("%20s%20s%20s",ctime(&( info->st_atime)),ctime(&( info->st_ctime)),ctime(&( info->st_mtime)));
+			//printing out information of each file
 			printf("------------------=\n");
 			printf("%4s\t%12s\n","Name",ent->d_name);
 			printf("%4s\t%12s\n","Type",ptr);
@@ -73,11 +72,12 @@ int main(int argc, char *argv[])
 			printf( (info->st_mode & S_IWOTH) ? "w" : "-");
 			printf( (info->st_mode & S_IXOTH) ? "x" : "-");
 			printf("\n");
+			//free memory
 			free(info);
 
 		}
 	}
-
+	//close directory
 	closedir(dir);
 
 	return 0;
