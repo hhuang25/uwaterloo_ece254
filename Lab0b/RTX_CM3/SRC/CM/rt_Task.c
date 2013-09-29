@@ -151,11 +151,18 @@ void rt_tsk_pass (void) {
 int os_tsk_count_get (void)
 {
 	int p_new = 0;
+	int i;
+	struct OS_TCB g;
 	
-	for (i = 0; i < os_maxtaskrun; i++) {
-    if (os_active_TCB[i] != NULL && os_active_TCB[i]->state != 0)
+	for (i = 0; i < os_maxtaskrun; i++)
+	{
+    if (os_active_TCB[i] != NULL)
 		{
-			p_new++;
+			g = (OS_TCB*)(os_active_TCB[i]);
+			if(g.state != 0)
+			{
+				p_new++;
+			}
 		}
   }
 	
