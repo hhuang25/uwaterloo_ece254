@@ -47,7 +47,7 @@ __task void SysMon()
 	while(1)
 	{
 		int num = os_tsk_count_get();
-		printf("Number of tasks running: %i", num);
+		printf("Number of tasks running: %i\n", num);
 	}
 }
 
