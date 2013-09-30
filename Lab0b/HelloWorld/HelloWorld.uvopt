@@ -496,8 +496,8 @@
       <Focus>0</Focus>
       <ColumnNumber>1</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>5</TopLine>
-      <CurrentLine>30</CurrentLine>
+      <TopLine>7</TopLine>
+      <CurrentLine>14</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\src\helloworld.c</PathWithFileName>
       <FilenameWithoutPath>helloworld.c</FilenameWithoutPath>

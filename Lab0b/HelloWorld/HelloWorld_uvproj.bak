@@ -80,7 +80,7 @@
             <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
             <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
           </AfterMake>
-          <SelectedForBatchBuild>0</SelectedForBatchBuild>
+          <SelectedForBatchBuild>1</SelectedForBatchBuild>
           <SVCSIdString></SVCSIdString>
         </TargetCommonOption>
         <CommonProperty>
@@ -200,7 +200,7 @@
             <GenPPlst>0</GenPPlst>
             <AdsCpuType>"Cortex-M3"</AdsCpuType>
             <RvctDeviceName></RvctDeviceName>
-            <mOS>1</mOS>
+            <mOS>0</mOS>
             <uocRom>0</uocRom>
             <uocRam>0</uocRam>
             <hadIROM>1</hadIROM>
@@ -434,6 +434,16 @@
           </Files>
         </Group>
         <Group>
+          <GroupName>RTX Lib</GroupName>
+          <Files>
+            <File>
+              <FileName>RTX_CM3.lib</FileName>
+              <FileType>4</FileType>
+              <FilePath>..\RTX_CM3\CM3_LE\RTX_CM3.lib</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
           <GroupName>Documents</GroupName>
           <Files>
             <File>
@@ -519,7 +529,7 @@
             <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
             <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
           </AfterMake>
-          <SelectedForBatchBuild>0</SelectedForBatchBuild>
+          <SelectedForBatchBuild>1</SelectedForBatchBuild>
           <SVCSIdString></SVCSIdString>
         </TargetCommonOption>
         <CommonProperty>
@@ -639,7 +649,7 @@
             <GenPPlst>0</GenPPlst>
             <AdsCpuType>"Cortex-M3"</AdsCpuType>
             <RvctDeviceName></RvctDeviceName>
-            <mOS>0</mOS>
+            <mOS>1</mOS>
             <uocRom>0</uocRom>
             <uocRam>0</uocRam>
             <hadIROM>1</hadIROM>
@@ -869,6 +879,16 @@
               <FileName>helloworld.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\src\helloworld.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>RTX Lib</GroupName>
+          <Files>
+            <File>
+              <FileName>RTX_CM3.lib</FileName>
+              <FileType>4</FileType>
+              <FilePath>..\RTX_CM3\CM3_LE\RTX_CM3.lib</FilePath>
             </File>
           </Files>
         </Group>

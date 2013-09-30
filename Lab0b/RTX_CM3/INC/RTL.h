@@ -210,6 +210,7 @@ extern int       _free_box (void *box_mem, void *box) __swi (2);
 extern void      os_set_env    (void);
 extern void      rt_sys_init   (void (*task)(void), U8 priority, void *stk);
 extern void      rt_tsk_pass   (void);
+extern int		 os_tsk_count_get (void); //new line
 extern OS_TID    rt_tsk_self   (void);
 extern OS_RESULT rt_tsk_prio   (OS_TID task_id, U8 new_prio);
 extern OS_TID    rt_tsk_create (void (*task)(void), U8 priority, void *stk, void *argv);
