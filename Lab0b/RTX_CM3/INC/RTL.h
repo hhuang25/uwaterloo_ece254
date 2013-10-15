@@ -230,7 +230,8 @@ extern OS_RESULT rt_tsk_delete (OS_TID task_id);
 #define os_tsk_create_user_ex(tsk,prio,stk,size,argv)                         \
                                       _os_tsk_create_ex((U32)rt_tsk_create,tsk,prio|(size<<8),stk,argv)
 #define os_tsk_self()                 _os_tsk_self((U32)rt_tsk_self)
-#define os_tsk_pass()                 _os_tsk_pass((U32)os_tsk_count_get)
+#define os_tsk_pass()                 _os_tsk_pass((U32)rt_tsk_pass)
+#define os_tsk_count_get(void) _os_tsk_count_get((U32) rt_tsk_count_get) // new line
 #define os_tsk_prio(task_id,new_prio) _os_tsk_prio((U32)rt_tsk_prio,task_id,new_prio)
 #define os_tsk_prio_self(prio)        _os_tsk_prio((U32)rt_tsk_prio,0,prio)
 #define os_tsk_delete(task_id)        _os_tsk_delete((U32)rt_tsk_delete,task_id)
@@ -245,6 +246,7 @@ extern OS_TID    _os_tsk_create_ex (U32 p, void (*task)(void *), U32 prio_stksz,
                                            void *stk, void *argv)      __SVC_0;
 extern OS_TID    _os_tsk_self (U32 p)                                  __SVC_0;
 extern void      _os_tsk_pass (U32 p)                                  __SVC_0;
+extern int _os_tsk_count_get (U32 p)																	 __SVC_0; //new line
 extern OS_RESULT _os_tsk_prio (U32 p, OS_TID task_id, U8 new_prio)     __SVC_0;
 extern OS_RESULT _os_tsk_delete (U32 p, OS_TID task_id)                __SVC_0;
 
@@ -652,6 +654,12 @@ extern HOSTENT *gethostbyname (const char *name, int *err);
 #ifdef __cplusplus
 }
 #endif
+
+/*----------------------------------------------------------------------------
+ * User Defined Kernel
+ *---------------------------------------------------------------------------*/
+#include "../SRC/CM/rt_user.h"
+
 
 /*----------------------------------------------------------------------------
  * end of file

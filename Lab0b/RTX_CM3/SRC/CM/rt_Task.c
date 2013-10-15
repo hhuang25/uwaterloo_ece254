@@ -152,20 +152,17 @@ int os_tsk_count_get (void)
 {
 	int p_new = 0;
 	int i;
-	P_TCB g;
-	
+	if(os_idle_TCB.state != 0)
+	{
+		p_new++;
+	}
 	for (i = 0; i < os_maxtaskrun; i++)
 	{
-    if (os_active_TCB[i] != NULL)
+    if (os_active_TCB[i] != NULL &&((P_TCB)os_active_TCB[i])->state != 0)
 		{
-			g = *(P_TCB *)os_active_TCB[i];
-			if(g->state != 0)
-			{
-				p_new++;
-			}
+			p_new++;
 		}
-  }
-	
+	}
 	return p_new;
 }
 

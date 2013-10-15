@@ -1,0 +1,6 @@
+SET PATH=C:\Software\Keil\ARM\ARMCC\bin\;C:\Software\Perl\site\bin\;C:\Software\Perl\bin\;C:\Program Files (x86)\SSH Communications Security\SSH Secure Shell;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\nexus\AddOns;C:\Program Files\MATLAB\R2012b\runtime\win64;C:\Program Files\MATLAB\R2012b\bin;C:\Program Files\MATLAB\R2010b\runtime\win64;C:\Program Files\MATLAB\R2010b\bin;c:\software\perl\bin;C:\software\altera\90\quartus\bin;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Software\Perl\site\bin\;C:\Software\Perl\bin\;;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\msi2xml\;C:\MingGW\bin
+SET CPU_TYPE=Cortex-M3
+SET CPU_VENDOR=ARM
+SET UV2_TARGET=CM3_LE
+SET CPU_CLOCK=0x00B71B00
+"C:\Software\Keil\ARM\ARMCC\bin\ArmCC" --Via ".\cm3_le\rt_task.__i"

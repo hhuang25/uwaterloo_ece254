@@ -9,7 +9,7 @@
 ### List of Objects: adding '".\build\flash\helloworld.o"'
 ### List of Objects: adding '"..\RTX_CM3\CM3_LE\RTX_CM3.lib"'
 ### ADS-LD Command completed:
---cpu Cortex-M3 ".\build\flash\startup_lpc17xx.o" ".\build\flash\system_lpc17xx.o" ".\build\flash\uart_polling.o" ".\build\flash\retarget.o" ".\build\flash\rtx_conf_cm.o" ".\build\flash\helloworld.o" "C:\Users\YeounJun Park\Dropbox\GIT\Lab0b\RTX_CM3\CM3_LE\RTX_CM3.lib" 
+--cpu Cortex-M3 ".\build\flash\startup_lpc17xx.o" ".\build\flash\system_lpc17xx.o" ".\build\flash\uart_polling.o" ".\build\flash\retarget.o" ".\build\flash\rtx_conf_cm.o" ".\build\flash\helloworld.o" N:\ECE_254\Lab0b\RTX_CM3\CM3_LE\RTX_CM3.lib 
 --strict --scatter ".\build\FLASH\HelloWorld.sct" 
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
 --info sizes --info totals --info unused --info veneers 
@@ -17,7 +17,7 @@
 ### ADS-LD Output File: '.\build\FLASH\HelloWorld.axf'
 ### ADS-LD Command File: '.\build\FLASH\HelloWorld.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile '.\build\FLASH\HelloWorld.lnp', Handle=0x00000890
+### Creating CmdFile '.\build\FLASH\HelloWorld.lnp', Handle=0x000001B8
 ### Writing '.lnp' file
 ### ADS-LD Command file '.\build\FLASH\HelloWorld.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

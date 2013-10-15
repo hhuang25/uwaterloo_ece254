@@ -9,7 +9,7 @@ __task void task1()
 	for(;; i++)
 	{
 		printf("Task1: %d\n", i);
-		os_dly_wait(10);
+		os_dly_wait(100);
 	}
 }
 
@@ -18,7 +18,7 @@ __task void task2()
 	while(1)
 	{
 		printf("Task2: HelloWorld!\n");
-		os_dly_wait(30);
+		os_dly_wait(300);
 	}
 }
 
@@ -28,7 +28,7 @@ __task void task3()
 	while(1)
 	{
 		g = g + g;
-		os_dly_wait(30);
+		os_dly_wait(300);
 	}
 }
 
@@ -38,7 +38,7 @@ __task void task4()
 	while(1)
 	{
 		p = p + p;
-		os_dly_wait(30);
+		os_dly_wait(300);
 	}
 }
 
@@ -48,6 +48,7 @@ __task void SysMon()
 	{
 		int num = os_tsk_count_get();
 		printf("Number of tasks running: %i\n", num);
+		os_dly_wait(100);
 	}
 }
 

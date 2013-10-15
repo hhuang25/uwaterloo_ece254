@@ -1,0 +1,47 @@
+
+Starter files for ECE254 Lab1:
+
+lab1_main.c:  sample user testing code to test PartA implemenation.
+rt_TypeDef.h: modified from original to allow ret_val in OS_TCB to be U32
+HAL_CM3.c:    modifed from original to allow ret_val in OS_TCB to be U32
+
+===============================================================================
+Detailed diffs:
+===============================================================================
+
+===============================================================================
+Diff rt_TypeDef.h original_rt_TypeDef.h
+===============================================================================
+
+10d9
+<  *      NOTE: This file has been modified to complete ECE254 lab1
+45,47c44
+< 
+<   /* The following variable type is changed from U8 to U32 for ECE@54 lab1   */
+<   U32    ret_val;                 /* Return value upon completion of a wait  */
+---
+>   U8     ret_val;                 /* Return value upon completion of a wait  */
+59,62c56,57
+< /* The following two macros are modifed from the original in ECE254 lab1     */ 
+< #define TCB_RETUPD      36        /* 'ret_upd' offset, original = 33         */
+< #define TCB_TSTACK      40        /* 'tsk_stack' offset, original = 36       */
+< 
+---
+> #define TCB_RETUPD      33        /* 'ret_upd' offset                        */
+> #define TCB_TSTACK      36        /* 'tsk_stack' offset                      */
+
+
+===============================================================================
+Diff HAL_CM3.c original_HAL_CM3.c
+===============================================================================
+
+144,145c144
+<         ;LDRB    R0,[R2,#TCB_RETVAL]     ; Write os_tsk.new->ret_val
+<         LDR     R0,[R2,#TCB_RETVAL]     ; Write os_tsk.new->ret_val, U32
+---
+>         LDRB    R0,[R2,#TCB_RETVAL]     ; Write os_tsk.new->ret_val
+208,209c207
+<         ;LDRB    R3,[R2,#TCB_RETVAL]     ; Write os_tsk.new->ret_val
+<         LDR    R3,[R2,#TCB_RETVAL]      ; Write os_tsk.new->ret_val, U32
+---
+>         LDRB    R3,[R2,#TCB_RETVAL]     ; Write os_tsk.new->ret_val

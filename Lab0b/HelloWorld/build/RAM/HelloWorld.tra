@@ -9,15 +9,15 @@
 ### List of Objects: adding '".\build\ram\helloworld.o"'
 ### List of Objects: adding '"..\RTX_CM3\CM3_LE\RTX_CM3.lib"'
 ### ADS-LD Command completed:
---cpu Cortex-M3 ".\build\ram\startup_lpc17xx.o" ".\build\ram\system_lpc17xx.o" ".\build\ram\uart_polling.o" ".\build\ram\retarget.o" ".\build\ram\rtx_conf_cm.o" ".\build\ram\helloworld.o" "C:\Users\YeounJun Park\Dropbox\GIT\Lab0b\RTX_CM3\CM3_LE\RTX_CM3.lib" 
-C:\Keil\ARM\RV31\LIB\RTX_CM3.LIB --strict --scatter ".\build\RAM\HelloWorld.sct" 
+--cpu Cortex-M3 ".\build\ram\startup_lpc17xx.o" ".\build\ram\system_lpc17xx.o" ".\build\ram\uart_polling.o" ".\build\ram\retarget.o" ".\build\ram\rtx_conf_cm.o" ".\build\ram\helloworld.o" N:\ECE_254\Lab0b\RTX_CM3\CM3_LE\RTX_CM3.lib 
+C:\Software\Keil\ARM\RV31\LIB\RTX_CM3.LIB --strict --scatter ".\build\RAM\HelloWorld.sct" 
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
 --info sizes --info totals --info unused --info veneers 
  --list ".\build\RAM\lst\HelloWorld.map" -o .\build\RAM\HelloWorld.axf### Preparing Environment (PrepEnvAds)
 ### ADS-LD Output File: '.\build\RAM\HelloWorld.axf'
 ### ADS-LD Command File: '.\build\RAM\HelloWorld.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile '.\build\RAM\HelloWorld.lnp', Handle=0x000008D8
+### Creating CmdFile '.\build\RAM\HelloWorld.lnp', Handle=0x00000370
 ### Writing '.lnp' file
 ### ADS-LD Command file '.\build\RAM\HelloWorld.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

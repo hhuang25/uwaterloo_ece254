@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\build\FLASH\HelloWorld.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\build\FLASH\HelloWorld.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5.02 [Build 28]: Last Updated: Mon Sep 30 11:26:15 2013
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5.02 [Build 28]: Last Updated: Wed Oct 02 16:31:11 2013
 <BR><P>
 <H3>Maximum Stack Usage =        128 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -577,7 +577,7 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> helloworld.o(.text)
 </UL>
-<P><STRONG><a name="[66]"></a>task2</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, helloworld.o(.text))
+<P><STRONG><a name="[66]"></a>task2</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, helloworld.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 128 + Unknown Stack Size
 <LI>Call Chain = task2 &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
 </UL>
@@ -585,13 +585,13 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> helloworld.o(.text)
 </UL>
-<P><STRONG><a name="[69]"></a>task3</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, helloworld.o(.text))
+<P><STRONG><a name="[69]"></a>task3</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, helloworld.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> helloworld.o(.text)
 </UL>
-<P><STRONG><a name="[6a]"></a>task4</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, helloworld.o(.text))
+<P><STRONG><a name="[6a]"></a>task4</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, helloworld.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> helloworld.o(.text)
 </UL>
-<P><STRONG><a name="[67]"></a>SysMon</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, helloworld.o(.text))
+<P><STRONG><a name="[67]"></a>SysMon</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, helloworld.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 128 + Unknown Stack Size
 <LI>Call Chain = SysMon &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
 </UL>
@@ -699,7 +699,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Tick_Handler
 </UL>
 
-<P><STRONG><a name="[68]"></a>os_tsk_count_get</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, rt_task.o(i.os_tsk_count_get))
+<P><STRONG><a name="[68]"></a>os_tsk_count_get</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, rt_task.o(i.os_tsk_count_get))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = os_tsk_count_get
 </UL>
 <BR>[Called By]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysMon

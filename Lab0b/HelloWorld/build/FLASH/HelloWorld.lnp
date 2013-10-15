@@ -1,4 +1,4 @@
---cpu Cortex-M3 ".\build\flash\startup_lpc17xx.o" ".\build\flash\system_lpc17xx.o" ".\build\flash\uart_polling.o" ".\build\flash\retarget.o" ".\build\flash\rtx_conf_cm.o" ".\build\flash\helloworld.o" "C:\Users\YeounJun Park\Dropbox\GIT\Lab0b\RTX_CM3\CM3_LE\RTX_CM3.lib" 
+--cpu Cortex-M3 ".\build\flash\startup_lpc17xx.o" ".\build\flash\system_lpc17xx.o" ".\build\flash\uart_polling.o" ".\build\flash\retarget.o" ".\build\flash\rtx_conf_cm.o" ".\build\flash\helloworld.o" N:\ECE_254\Lab0b\RTX_CM3\CM3_LE\RTX_CM3.lib 
 --strict --scatter ".\build\FLASH\HelloWorld.sct" 
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
 --info sizes --info totals --info unused --info veneers 
