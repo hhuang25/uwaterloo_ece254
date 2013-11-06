@@ -17,7 +17,7 @@
 ### ADS-LD Output File: '.\build\FLASH\HelloWorld.axf'
 ### ADS-LD Command File: '.\build\FLASH\HelloWorld.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile '.\build\FLASH\HelloWorld.lnp', Handle=0x000001B8
+### Creating CmdFile '.\build\FLASH\HelloWorld.lnp', Handle=0x00000430
 ### Writing '.lnp' file
 ### ADS-LD Command file '.\build\FLASH\HelloWorld.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

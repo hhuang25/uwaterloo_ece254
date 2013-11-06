@@ -427,9 +427,9 @@
           <GroupName>Source Code</GroupName>
           <Files>
             <File>
-              <FileName>helloworld.c</FileName>
+              <FileName>lab1_main.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\src\helloworld.c</FilePath>
+              <FilePath>.\src\lab1_main.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -876,9 +876,9 @@
           <GroupName>Source Code</GroupName>
           <Files>
             <File>
-              <FileName>helloworld.c</FileName>
+              <FileName>lab1_main.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\src\helloworld.c</FilePath>
+              <FilePath>.\src\lab1_main.c</FilePath>
             </File>
           </Files>
         </Group>

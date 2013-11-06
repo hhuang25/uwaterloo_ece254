@@ -10,5 +10,6 @@
   ".\cm3_le\rt_mutex.o"
   ".\cm3_le\rt_robin.o"
   ".\cm3_le\rt_membox.o"
+  ".\cm3_le\rt_user.o"
   ".\cm3_le\svc_table.o"
   ".\cm3_le\hal_cm3.o"

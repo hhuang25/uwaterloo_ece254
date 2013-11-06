@@ -148,23 +148,6 @@ void rt_tsk_pass (void) {
 /*------------------------ os_tsk_count_get ---------------------------------*/
 /*------------------------ os_tsk_count_get ---------------------------------*/
 
-int os_tsk_count_get (void)
-{
-	int p_new = 0;
-	int i;
-	if(os_idle_TCB.state != 0)
-	{
-		p_new++;
-	}
-	for (i = 0; i < os_maxtaskrun; i++)
-	{
-    if (os_active_TCB[i] != NULL &&((P_TCB)os_active_TCB[i])->state != 0)
-		{
-			p_new++;
-		}
-	}
-	return p_new;
-}
 
 /*--------------------------- rt_tsk_self -----------------------------------*/
 

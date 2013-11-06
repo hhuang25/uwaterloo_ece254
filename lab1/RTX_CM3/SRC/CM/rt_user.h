@@ -31,8 +31,15 @@ extern int rt_tsk_count_get(void);
 #define os_tsk_count_get(void) _os_tsk_count_get((U32)rt_tsk_count_get)
 extern int _os_tsk_count_get (U32 p) __SVC_0;
 
+/* Wrappers for lab1 */
 extern OS_RESULT rt_tsk_get (OS_TID task_id, RL_TASK_INFO *buffer);
-#define os_tsk_get(task_id, buffer) _os_task_get((U32) rt_tsk_get, task_id, buffer)
-extern OS_RESULT os_task_get(U32 p, OS_TID task_id, RL_TASK_INFO * buffer) __SVC_0;
+#define os_tsk_get(task_id, buffer) _os_tsk_get((U32) rt_tsk_get, task_id, buffer)
+extern OS_RESULT _os_tsk_get(U32 p, OS_TID task_id, RL_TASK_INFO *buffer) __SVC_0;
 
+extern void *rt_mem_alloc (void *box_mem);
+#define os_mem_alloc(box_mem) _os_mem_alloc( (U32) rt_mem_alloc, box_mem)
+extern void* _os_mem_alloc(U32 p, void *box_mem) __SVC_0;
 
+extern OS_RESULT rt_mem_free (void *box_mem, void *box);
+#define os_mem_free(box_mem, box) _os_mem_free((U32) rt_mem_free, box_mem, box)
+extern OS_RESULT _os_mem_free(U32 p, void *box_mem, void *box) __SVC_0;

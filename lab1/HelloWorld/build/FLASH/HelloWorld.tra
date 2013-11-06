@@ -10,17 +10,17 @@
 ### List of Objects: adding '"..\RTX_CM3\CM3_LE\RTX_CM3.lib"'
 ### ADS-LD Command completed:
 --cpu Cortex-M3 ".\build\flash\startup_lpc17xx.o" ".\build\flash\system_lpc17xx.o" ".\build\flash\uart_polling.o" ".\build\flash\retarget.o" ".\build\flash\rtx_conf_cm.o" ".\build\flash\lab1_main.o" N:\ECE_254\lab1\RTX_CM3\CM3_LE\RTX_CM3.lib 
---strict --scatter ".\build\FLASH\HelloWorld.sct" 
+C:\Software\Keil\ARM\RV31\LIB\RTX_CM3.LIB --strict --scatter ".\build\FLASH\HelloWorld.sct" 
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
 --info sizes --info totals --info unused --info veneers 
  --list ".\build\FLASH\lst\HelloWorld.map" -o .\build\FLASH\HelloWorld.axf### Preparing Environment (PrepEnvAds)
 ### ADS-LD Output File: '.\build\FLASH\HelloWorld.axf'
 ### ADS-LD Command File: '.\build\FLASH\HelloWorld.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile '.\build\FLASH\HelloWorld.lnp', Handle=0x00000804
+### Creating CmdFile '.\build\FLASH\HelloWorld.lnp', Handle=0x00002E84
 ### Writing '.lnp' file
 ### ADS-LD Command file '.\build\FLASH\HelloWorld.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.
-### ADS-LD: executed with 2 errors
+### ADS-LD: executed with 0 errors
 ### Updating obj list
 ### LDADS_file() completed.

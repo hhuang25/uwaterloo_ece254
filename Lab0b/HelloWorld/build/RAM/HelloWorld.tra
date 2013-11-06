@@ -17,7 +17,7 @@ C:\Software\Keil\ARM\RV31\LIB\RTX_CM3.LIB --strict --scatter ".\build\RAM\HelloW
 ### ADS-LD Output File: '.\build\RAM\HelloWorld.axf'
 ### ADS-LD Command File: '.\build\RAM\HelloWorld.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile '.\build\RAM\HelloWorld.lnp', Handle=0x00000370
+### Creating CmdFile '.\build\RAM\HelloWorld.lnp', Handle=0x00000454
 ### Writing '.lnp' file
 ### ADS-LD Command file '.\build\RAM\HelloWorld.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

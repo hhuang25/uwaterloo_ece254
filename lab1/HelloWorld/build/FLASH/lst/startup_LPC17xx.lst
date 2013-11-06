@@ -424,7 +424,8 @@ ARM Macro Assembler    Page 7
 Command Line: --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=.\build\
 FLASH\startup_LPC17xx.d -o.\build\FLASH\startup_LPC17xx.o -IC:\Software\Keil\AR
 M\RV31\INC -IC:\Software\Keil\ARM\CMSIS\Include -IC:\Software\Keil\ARM\Inc\NXP\
-LPC17xx --list=.\build\FLASH\lst\startup_LPC17xx.lst src\startup_LPC17xx.s
+LPC17xx --predefine="__RTX SETA 1" --list=.\build\FLASH\lst\startup_LPC17xx.lst
+ src\startup_LPC17xx.s
 
 
 
@@ -1069,4 +1070,4 @@ Symbol: __use_two_region_memory
       None
 Comment: __use_two_region_memory unused
 2 symbols
-399 symbols in table
+400 symbols in table
